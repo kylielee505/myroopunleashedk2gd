@@ -3,4 +3,5 @@
 from roop import core
 
 if __name__ == '__main__':
-    core.run()
+    interface = core.run()  # Ensure core.run() returns the Gradio interface object
+    interface.launch(share=True)
